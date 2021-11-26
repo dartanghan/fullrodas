@@ -1,0 +1,74 @@
+/* cabeçalho da pagina... */
+.siteWidth, .mainPanel, .headerPanel, .pageClass{
+	width: 900;
+}
+.pageClass{
+	vertical-align: top;
+	border: 0px;
+	z-index:-100;
+	background: url(../images/design/topo.jpg) no-repeat top right transparent;
+}
+
+.headerPanel{
+	border: 1px solid #333333;
+	border-bottom-width: 0px;
+	height: 200;
+}
+/* rodape da pagina */
+.footerPanel{
+	border: 1px solid #dddddd;
+	height: 80;
+}
+.menuBotao{
+	position: relative;
+	cursor: pointer;
+	width: 96;
+	height: 23;
+	z-index:0;
+}
+.botaoCarro{
+	background: transparent url(../images/design/botaoCarro.jpg) no-repeat;
+}
+.botaoRoda{
+	background: transparent url(../images/design/botaoRoda.jpg) no-repeat;
+}
+
+/* container principal */
+.mainPanel{
+
+	border: 1px solid #333333;
+	border-top-width: 0px;
+	x: 200;
+	height: 600;
+}
+
+/* onde ficam os botões para selecionar itens */
+.selectorsContainer{
+	float: left;
+	border: 1px solid #dddddd;
+	left:0;
+	width: 170;
+	height: 300;
+}
+
+/* onde fica o conteudo */
+.contentPanel{
+	float: right;
+	width: 900-170;
+}
+
+
+/* onde ficam os elementos ( imagem e link para sletor )*/
+.itemComponent{
+	left:5;
+	height: 90;
+	width: 105;
+	text-align: center;
+}
+
+/* painel de exibição de produtos */
+.itemSelectorPanel{
+	height: 300;
+}
+
+

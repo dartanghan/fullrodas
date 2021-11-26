@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<script language="javascript" type="text/javascript" src="js/jquery-1.3.js"></script>
+		<script language="javascript" type="text/javascript" src="js/ui/i18n/jquery.ui.i18n.all.js"></script>
+		<script language="javascript" type="text/javascript" src="js/ui/jquery-ui-personalized-1.6rc5.min.js"></script>
+
+		<link href="css/full.all.css" rel="stylesheet" type="text/css"/>
+
+		<!-- javascript desta pagina -->
+		<script language="javascript" type="text/javascript" src="js/carView.js"></script>
+	</head>
+	<body >
+
+			<div style="float: right">
+					<a onclick="rebaixa(false)" class="botaoRebaixe" >Subir</a>
+					<a onclick="rebaixa(true)" class="botaoRebaixe" style="top:30px">Rebaixar</a>
+					<a onclick="carregarCarro( 'images/carros/jetta06.png', 25, 151, 174 )" class="botaoRebaixe" >Jetta</a><br/>
+					<a onclick="carregarCarro( 'images/carros/civic05.png', 17, 151, 174 )" class="botaoRebaixe" >Civic</a><br/>
+					<a onclick="carregarCarro( 'images/carros/golf07.png', 26, 138, 174 )" class="botaoRebaixe" >Golf</a><br/>
+					<a onclick="carregarCarro( 'images/carros/megane07.png', 20, 158, 174 )" class="botaoRebaixe" >Megane</a><br/>
+
+					<a onclick="carregarRoda( 'images/rodas/BMW_roda.png', 174 )" class="botaoRebaixe" >RodaBMW</a><br/>
+					<a onclick="carregarRoda( 'images/rodas/gomo_roda.png', 174 )" class="botaoRebaixe" >RodaGomo</a><br/>
+					<a onclick="carregarRoda( 'images/rodas/cruz_roda.png', 174 )" class="botaoRebaixe" >RodaCruz</a><br/>
+			</div>
+
+			<div id="carroContainer" class="carroContainerCSS">
+				<div id="carroEdit" class="carroCSS">
+					<div id="sombraEdit" class="sombraCSS"></div>
+					<div id="rodaDianteiraEdit" class="rodaDianteiraCSS"></div>
+					<div id="rodaTraseiraEdit" class="rodaTraseiraCSS"></div>
+				</div>
+			</div>
+
+	</body>
+</html>

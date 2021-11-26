@@ -1,0 +1,64 @@
+/* estilos usados para apresentar o carro e as rodas */
+.botaoFuncao{
+	position: relative;
+	cursor: pointer;
+	width: 95;
+	height: 21;
+	z-index:0;
+}
+
+.botaoRebaixe{
+	float: left;
+	background: transparent url(../images/design/botaoRebaixar.jpg) no-repeat;
+}
+
+.botaoLevante{
+	float: right;
+	background: transparent url(../images/design/botaoLevantar.jpg) no-repeat;
+}
+
+.botaoMaisPerfil{
+	float: left;
+	background: transparent url(../images/design/botaoMaisPerfil.jpg) no-repeat;
+}
+
+.botaoMenosPerfil{
+	float: right;
+	background: transparent url(../images/design/botaoMenosPerfil.jpg) no-repeat;
+}
+
+.carroContainerCSS{
+	position: relative;
+	top: 10;
+	float: right;
+	width: 590;
+	height: 300;
+	z-index:-2;
+	/*border: 1px solid #000;//*/
+}
+.roda, .rodaTraseiraCSS, .rodaDianteiraCSS {
+/*		border: 1px solid #000;*/
+	position: relative;
+	float: left;
+	height: 120;
+	width: 120;
+}
+.rodaDianteiraCSS {
+}
+.rodaTraseiraCSS {
+}
+.carroCSS{
+/*	border: 1px solid #000;*/
+	position: relative;
+	width: 500px;
+	height: 300px;
+}
+.sombraCSS{
+	top: 180px;
+	float: bottom;
+	position: relative;
+	width: 480px;
+	height: 20px;
+	z-index:-3;
+	background: transparent url(../images/sombra.jpg) no-repeat;
+}
