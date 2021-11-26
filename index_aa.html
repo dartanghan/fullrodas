@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<script src="./js/ext-2.0.2/adapter/ext/ext-base.js" type="text/javascript" language="javascript"></script>
+		<script src="./js/ext-2.0.2/ext-core-debug.js" type="text/javascript" language="javascript"></script>
+		<script src="./js/ext-2.0.2/ext-all-debug.js" type="text/javascript" language="javascript"></script>
+
+		<link type="text/css" rel="stylesheet" href="./js/ext-2.0.2/resources/css/ext-all.css"/>
+
+		<script type="text/javascript" language="javascript">
+
+			function showPanel(){
+				selectionPanel = new Ext.Window({
+					frame:true,
+					height: 300,
+					width: 500,
+					title: 'Selecione',
+					modal: true,
+					layout: 'fit',
+					items:[
+						new Ext.TabPanel({
+						    activeTab: 0,
+						    items: [{
+						        title: 'Tab 1',
+						        html: 'A simple tab'
+						    },{
+						        title: 'Tab 2',
+						        html: 'Another one'
+						    }]
+						})
+					]
+				})
+				selectionPanel.show();
+			}
+
+			// main function
+			start = function(){
+				new Ext.Button({
+					handler: showPanel,
+					applyTo: document.body,
+					text: 'Carro'
+				})
+			}
+
+			Ext.onReady(
+				start
+			);
+
+		</script>
+		<title/>
+	</head>
+</html>
